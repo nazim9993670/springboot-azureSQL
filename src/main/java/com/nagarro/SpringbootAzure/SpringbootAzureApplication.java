@@ -22,7 +22,7 @@ public class SpringbootAzureApplication {
 		return repository.save(employee);
 	}
 
-	@GetMapping("employees")
+	@GetMapping("/employees")
 	public List<Employee> getEmployee(){
 		return repository.findAll();
 	}
